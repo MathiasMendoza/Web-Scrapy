@@ -44,7 +44,7 @@ for img in images:
         file_path = dir + '\\Image' + str(nro) + '.jpg'
         with open(file_path, 'wb') as f:
             image.save(f, 'JPEG', quality= 85)
-        print("Success - saved as {} on {}".format(src, file_path))
+        print("Success - saved {} on {}".format(src, file_path))
         nro+=1
 
     except Exception as e:
