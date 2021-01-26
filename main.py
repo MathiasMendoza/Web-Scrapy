@@ -43,10 +43,10 @@ for img in images:
         image = Image.open(image_file).convert('RGB')
         file_path = dir + '\\Image' + str(nro) + '.jpg'
         with open(file_path, 'wb') as f:
-            image.save(f, 'JPEG', quality=85)
-        print("Success - saved {} as {}".format(url, file_path))
-        nro +=1
+            image.save(f, 'JPEG', quality= 85)
+        print("Success - saved as {} on {}".format(src, file_path))
+        nro+=1
 
     except Exception as e:
-        print("Error - could not save {} - {}".format(url, e))
+        print("Error - could not save image from url {} - {}".format(url, e))
 
